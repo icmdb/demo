@@ -10,7 +10,7 @@
 ```bash
 pip install virtualenv virtualenvwrapper
 
-mkvirtualenv sentry
+mkvirtualenv demo
 
 pip install --upgrade raven
 ```
