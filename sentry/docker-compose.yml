@@ -1,0 +1,17 @@
+version: "2"
+services:
+  sentry-redis:
+    image:
+    restart: always
+  sentry-postgre:
+    image:
+    restart: always
+  sentry-web:
+    image:
+    restart: always
+  sentry-worker:
+    image:
+    restart: always
+  sentry-cron:
+    image:
+    restart: always
