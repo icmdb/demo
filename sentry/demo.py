@@ -9,8 +9,9 @@ from raven import Client
 PUBLIC_KEY = os.getenv("PUBLIC_KEY", "PUBLIC_KEY")
 SECRET_KEY = os.getenv("SECRET_KEY", "SECRET_KEY")
 PROJECT_ID = os.getenv("PROJECT_ID", "PROJECT_ID")
+DOMAINNAME = os.getenv("DOMAINNAME", "sentry.io")
 
-DSN = ''.join(['https://',PUBLIC_KEY,':',SECRET_KEY,'@sentry.io/', PROJECT_ID])
+DSN = ''.join(['https://',PUBLIC_KEY,':',SECRET_KEY,'@', DOMAINNAME, '/', PROJECT_ID])
 
 client = Client(DSN)
 
