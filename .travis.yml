@@ -1,0 +1,12 @@
+language: python
+virtualenv: 
+  system_site_packages: true
+python:
+  - "2.7"
+  - "nightly"
+install:
+  - pip install requirements.txt
+env:
+  - DJANGO_VERSION=1.11
+script:
+  - pytest
