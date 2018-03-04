@@ -2,6 +2,9 @@
 
 A demo project.
 
+Demo中的图例会使用ProcessOn共享，欢迎访问以下地址注册（为自己赚几个文件数）：
+> https://www.processon.com/i/585a85d3e4b078015c5587c4
+
 ## Clone
 
 ```bash
@@ -12,7 +15,7 @@ cd demo
 git config user.name teachmyself
 git config user.email teachmyself@126.com
 
-cat ~/.gitconfig <<GIT
+cat > ~/.gitconfig <<GIT
 [push]
     default = matching
 [filter "lfs"]
